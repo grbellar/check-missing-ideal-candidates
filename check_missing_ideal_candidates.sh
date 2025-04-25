@@ -16,7 +16,7 @@ echo "Starting missing ideal candidates check process..."
 response=$(curl -s -X POST \
     -H "Authorization: Bearer $ACCESS_TOKEN" \
     -H "Content-Type: application/json" \
-    "$API_URL/check-missing-ideal-candidates")
+    "$API_URL/fix-missing-ideal-candidates")
 
 # Check if curl command succeeded
 if [ $? -ne 0 ]; then
